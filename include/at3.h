@@ -1,5 +1,5 @@
-#ifndef AT3_H
-#define AT3_H
+#ifndef PSPAV_AT3_H
+#define PSPAV_AT3_H
 
 #ifdef __cplusplus
 extern "C" {
