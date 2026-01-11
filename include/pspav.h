@@ -3,7 +3,15 @@
 
 #include "pspav_entry.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 unsigned char pspavPlayGamePMF(PSPAVEntry* e, PSPAVCallbacks* callbacks, int x, int y);
 void pspavPlayVideoFile(const char* path, PSPAVCallbacks* callbacks);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -1,6 +1,10 @@
 #ifndef PSPAV_ENTRY
 #define PSPAV_ENTRY
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 typedef enum{
     PAD_USER_CANCEL = -1,
     PAD_NONE = 0,
@@ -28,5 +32,9 @@ typedef struct{
     void (*drawTexture)(void*, int, int);
     void (*setTextureAlpha)(void*, int);
 }PSPAVCallbacks;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
