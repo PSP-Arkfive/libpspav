@@ -365,7 +365,7 @@ SceVoid pspavShutdown()
     sceUtilityUnloadModule(PSP_MODULE_AV_ATRAC3PLUS);
     
     if (m_pEsBufferAtrac  != NULL) free(m_pEsBufferAtrac);
-    if (m_RingbufferData  != NULL) vfree(m_RingbufferData); // This crashes....double free or corruption?
+    if (m_RingbufferData  != NULL) vfree(m_RingbufferData);
     if (m_MpegMemData     != NULL) free(m_MpegMemData);
     
 }
